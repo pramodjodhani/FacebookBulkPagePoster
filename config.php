@@ -7,16 +7,15 @@ if(!session_id()) {
     session_start();
 }
 
-define("SITE_URL" , "http://footy.dk/fbupload/");
-define("APP_ID" , "553340168368648");
-define("APP_SECRET" , "0aab9cda8defbc2e00737b6c2b66519d");
+define("SITE_URL" , "http://mysite.com"); // Replace with the URL of your website 
+define("APP_ID" , "MY_APP_ID"); // Replace with the Facebook app id
+define("APP_SECRET" , "MY_APP_SECRET"); // Replace with the Facebook secret key
 
 
-
-define("DATABASE_HOST" , "localhost");
-define("DATABASE_NAME" , "footy_fbupload_db");
-define("DATABASE_USER" , "footyfbuploadusr");
-define("DATABASE_PASS" , "rzeqLZY@J8");
+define("DATABASE_HOST" , "MY_DB_HOST"); // Replace with the database host. Usually its localhost
+define("DATABASE_NAME" , "MY_DATABASE_NAME"); //Replace with the database name
+define("DATABASE_USER" , "MY_DATABASE_USER"); //Replace with the database username
+define("DATABASE_PASS" , "MY_DATABASE_PASSWORD"); //Repalce wit the database password
 
 
 
