@@ -7,15 +7,18 @@
       	
       	<?php 
 
+          if(isset($_GET["success"])) {
+            echo "<p class='bg bg-success'>Post has been published</p>";
+          }
       		if(authentication_done()) {
-
-      			//fetch_page_tokens();
-            //echo get_page_token("2084987358438056");
+            include "ajax_paginator.php";
+            //fetch_page_tokens();
             fb_logout_btn();
-      			post_to_page();
+      		  //get_list_of_pages();
+            post_to_page();
 
 
-      		}
+      	  }
       		else {
       			authenticate_btn();
       		}
@@ -27,4 +30,20 @@
       
     </div>
   </div>
+  <script type="text/javascript">
+    
+    jQuery(".label_select_all_1 input").change(function() {
+      var a = jQuery(this).prop("checked")
+      jQuery(".group_label_1 input").prop("checked" , a);
+    })
+    jQuery(".label_select_all_all input").change(function() {
+      var a = jQuery(this).prop("checked")
+      jQuery(".group_label_1 input , .group_label_2 input").prop("checked" , a);
+    })
+    jQuery(".label_select_all_2 input").change(function() {
+      var a = jQuery(this).prop("checked")
+      jQuery(".group_label_2 input").prop("checked" , a);
+    })
+
+  </script>
 <?php include "footer.php"; ?>

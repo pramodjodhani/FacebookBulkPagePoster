@@ -7,19 +7,16 @@ if(!session_id()) {
     session_start();
 }
 
-define("SITE_URL" , "http://localhost/fbbulk/");
-define("APP_ID" , "757198031024035");
-define("APP_SECRET" , "84e464e054a7d07fdec4987d0b1a371f");
+define("SITE_URL" , "http://footy.dk/fbupload/");
+define("APP_ID" , "553340168368648");
+define("APP_SECRET" , "0aab9cda8defbc2e00737b6c2b66519d");
 
-
-define("ADMIN_USERNAME" , "admin");
-define("ADMIN_PASS" , "123@Admin");
 
 
 define("DATABASE_HOST" , "localhost");
-define("DATABASE_NAME" , "fbbulk");
-define("DATABASE_USER" , "root");
-define("DATABASE_PASS" , "");
+define("DATABASE_NAME" , "footy_fbupload_db");
+define("DATABASE_USER" , "footyfbuploadusr");
+define("DATABASE_PASS" , "rzeqLZY@J8");
 
 
 

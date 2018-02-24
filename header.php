@@ -15,6 +15,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fileupload.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -29,7 +30,14 @@
       }
 
     </style>
-
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/vendor/jquery.ui.widget.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      var SITE_URL = "<?php echo  SITE_URL; ?>";
+    </script>
   </head>
 
   <body>
